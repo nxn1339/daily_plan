@@ -1,3 +1,4 @@
+import 'package:daily_plan/screens/dash_board.dart';
 import 'package:flutter/material.dart';
 import 'package:daily_plan/screens/home.dart';
 import 'package:daily_plan/utils/theme/theme.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: ThemeApp.lightTheme,
       darkTheme: ThemeApp.darkTheme,
-      home: HomeScreens(),
+      home: DashBoard(),
     );
   }
 }
