@@ -1,5 +1,8 @@
 import 'package:daily_plan/controllers/dash_board_controller.dart';
 import 'package:daily_plan/screens/home.dart';
+import 'package:daily_plan/screens/other.dart';
+import 'package:daily_plan/screens/report.dart';
+import 'package:daily_plan/screens/task.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -111,11 +114,11 @@ class DashBoard extends StatelessWidget {
       case 0:
         return HomeScreen();
       case 1:
-        return HomeScreen();
+        return TaskScreen();
       case 2:
-        return HomeScreen();
+        return ReportScreen();
       case 3:
-        return HomeScreen();
+        return OtherScreen();
       default:
         return HomeScreen();
     }
