@@ -1,5 +1,6 @@
 import 'package:daily_plan/common/widgets/box_item.dart';
 import 'package:daily_plan/common/widgets/task_item.dart';
+import 'package:daily_plan/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,8 +10,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'My Task',
+        title: Text(
+          S.of(context).hello,
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
         ),
       ),
